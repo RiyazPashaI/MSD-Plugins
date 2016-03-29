@@ -204,7 +204,7 @@ public class UserPortlet extends MVCPortlet {
 			try {
 				PhoneLocalServiceUtil.addPhone(userId, User.class.getName(), 
 						classpk, phoneNumber, "",phoneTypeId, true, serviceContext);
-			} catch (PortalException | SystemException e) {
+			} catch (Exception e) {
 				_log.error(e);
 			}
 		
